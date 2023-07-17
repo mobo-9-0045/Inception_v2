@@ -11,5 +11,5 @@ mv /wp-config.php /var/www/html/wp-config.php
 sed -i -r "s/db_name/$DB_NAME/1"			wp-config.php
 sed -i -r "s/db_user/$DB_USER/1"			wp-config.php
 sed -i -r "s/db_password/$DB_PASSWORD/1"	wp-config.php
-wp core install --url=$DOMAIN_NAME --title=My_site --admin_user=aomman --admin_password=1234 --admin_email=abdelilahoman@hotmail.com --skip-email --allow-root
+wp core install --url=$DOMAIN_NAME --title=$WP_TITILE --admin_user=$WP_USER --admin_password=$WP_PASSWORD --admin_email=$WP_EMAIL --skip-email --allow-root
 /usr/sbin/php-fpm7.3 -F -R

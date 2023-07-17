@@ -38,13 +38,13 @@ volumes:
   mariadb_data :
     driver : local
     driver_opts :
-      device : /home/mobo/data/database
+      device : /home/aomman/data/database
       o : bind
       type : none
   www-data :
     driver : local
     driver_opts :
-      device : /home/mobo/data/wordpress
+      device : /home/aomman/data/wordpress
       o : bind
       type : none
 networks :
